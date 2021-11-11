@@ -92,7 +92,7 @@ int RecBinarySearch(int a[], int l, int h, int key) {
     return -1;
 }
 
-// GET -- Given an index to an array, returns the element in that array
+// GET --> Given an index to an array, returns the element in that array
 // Passing the 'arr' by value because we are NOT modifying it.
 int Get(struct Array arr, int index) {
     // Check that the 'index' is valid
@@ -101,7 +101,7 @@ int Get(struct Array arr, int index) {
     return -1; // If invalid 'index', return -1
 }
 
-// SET -- Replaces an existing element in the array with a new element 'x'
+// SET --> Replaces an existing element in the array with a new element 'x'
 // Passing the 'arr' by address because we are modifying it.
 void Set(struct Array *arr, int index, int x) {
     // Check that the 'index' is valid
@@ -109,7 +109,7 @@ void Set(struct Array *arr, int index, int x) {
         arr->A[index] = x;
 }
 
-// MAX - Given an array (either unsorted or sorted), finds the max element
+// MAX --> Given an array (either unsorted or sorted), finds the max element
 // Passing the 'arr' by value because we are NOT modifying it.
 int Max(struct Array arr) {
     int max = arr.A[0];
@@ -120,7 +120,7 @@ int Max(struct Array arr) {
     return max;
 }
 
-// MIN - Given an array (either unsorted or sorted), finds the min element
+// MIN --> Given an array (either unsorted or sorted), finds the min element
 // Passing the 'arr' by value because we are NOT modifying it.
 int Min(struct Array arr) {
     int min = arr.A[0];
@@ -131,7 +131,7 @@ int Min(struct Array arr) {
     return min;
 }
 
-// SUM - Given an array, returns the sum of all the elements
+// SUM --> Given an array, returns the sum of all the elements
 // Passing the 'arr' by value because we are NOT modifying it.
 int Sum(struct Array arr) {
     int s = 0;
@@ -140,7 +140,7 @@ int Sum(struct Array arr) {
     return s;
 }
 
-// AVG - Given an array, returns the average of all the elements
+// AVG --> Given an array, returns the average of all the elements
 // Passing the 'arr' by value because we are NOT modifying it.
 float Avg(struct Array arr) {
     return (float) Sum(arr)/arr.length; // Typecast the result as float
