@@ -147,7 +147,7 @@ float Avg(struct Array arr) {
     return (float) Sum(arr)/arr.length; // Typecast the result as float
 }
 
-// REVERSE (METHOD 1) - Reversing by using an Auxiliary Array
+// REVERSE (METHOD 1) --> Reversing by using an Auxiliary Array
 // Passing the 'arr' by address because we are modifying it.
 void Reverse(struct Array *arr) {
     // Creating an Auxiliary Array 'B' in the Heap
@@ -168,7 +168,7 @@ void Swap(int *x, int *y) {
     *y = temp;
 }
 
-// REVERSE (METHOD 2) - Reversing by swapping elements from each end of an array
+// REVERSE (METHOD 2) --> Reversing by swapping elements from each end of an array
 // Passing the 'arr' by address because we are modifying it.
 void Reverse2(struct Array *arr) {
     // Swapping stops once i >= j
